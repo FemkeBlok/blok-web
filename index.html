@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,20 +13,24 @@
 
         <nav>
 
-            <img class=navigatiefoto src="https://static.eurostar.com/shared/images/logos/logo.svg" alt="logo">
+            <img class=navigatiefoto alt="foto" src=afbeeldingen/logo-desktop.svg>
+
 
             <ul>
-                <li> <a href="">Verrassing</a> </li>
-                <li> <a href="">Favouriet</a></li>
-                <li><a href="">Gedownload</a></li>
+                <li> <a class="menu" href="verrassing">Verrassing</a> </li>
+                <li> <a class="menu" href="favouriet">Favouriet</a></li>
+                <li><a class="menu" href="inloggen">Inloggen</a></li>
 
 
             </ul>
+
+
         </nav>
 
 
         <div class="container">
-            <h1 class=titel>Aanbevolen voor jou</h1><img src="http://cobra.canvas.be/polopoly_fs/1.894871!image/2056747240.jpg_gen/derivatives/landscape670/2056747240.jpg" alt="headerfoto">
+            <h1 class=titel>Aanbevolen voor jou</h1><img src="afbeeldingen/banner.jpg" alt="afbeelding">
+
             <button class="btn"> Bekijk verhalen </button>
         </div>
 
@@ -42,7 +46,7 @@
 
         </form>
 
-        <form action="">
+        <form class="formulier" action="checkbox">
             <p>Genre </p>
             <input class="checkbox" type="checkbox" name="genre" value="Familie, Liefde en Relaties" /> Familie, Liefde en Relaties
             <input class="checkbox" type="checkbox" name="genre" value="Fantasy en Science fiction" /> Fantasy en Science fiction
@@ -54,45 +58,113 @@
 
         </form>
 
-        <form action="">
-            <p>Sfeer</p>
-            <input type="checkbox" name="genre" value="Verbazing" /> Afschuw
-            <input type="checkbox" name="genre" value="Angst" />Angst
-            <input type="checkbox" name="genre" value="Verbazing" /> Verbazing
-            <input type="checkbox" name="genre" value="Vreugde" /> Vreugde
-            <input type="checkbox" name="genre" value="Verdriet" /> Verdriet
-            <input type="checkbox" name="genre" value="Woede" /> Woede
 
+        <form action="range">
+            <p> Aantal woorden</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </form>
-        <button class="zoekknop"> ZOEKEN </button>
+
+        <button class="zoekknop"> Zoeken  </button>
 
 
 
     </section>
 
+    <article class="sorteren">
+        <h2 class="resultaten">99 resultaten </h2>
+        <form class="sorterenop" action="checkbox">
+            <select name="sorterenop">
+        <option value="meest bekeken"> meest bekeken</option>
+        <option value="a-z"> a-z </option>
+        <option value="z-a">z-a</option>
+        <option value="random">random</option>
+    </select>
+        </form>
+
+    </article>
 
 
 
 
+    <section class="sorterenverhalen">
+        <article class="verhalen">
+            <img class="fotoverhalen" src="http://q-staff.eu/wp-content/uploads/2015/01/dromen.jpg" alt="foto">
+            <h2>Droom </h2>
+            <h3> Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
 
-    <img class="fotoverhalen" src="http://q-staff.eu/wp-content/uploads/2015/01/dromen.jpg" alt="foto">
-    <section class="verhalen">
-        <h2>Droom </h2>
-        <P> Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep. Nu loop ik over een smal pad langs eindeloos diepe bouwputten. Een heipaal beukt zich een weg naar het binnenste van mijn oor.</P>
-        <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
 
-    </section>
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://thumbs.werkaandemuur.nl/b9597d13a1910afd339861abcd6c3329_950x600_fit.jpg" alt="foto">
+            <h2>Regenboog </h2>
+            <h3> Fantasy en Science fiction</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
 
-    <img class="fotoverhalen" src="https://thumbs.werkaandemuur.nl/b9597d13a1910afd339861abcd6c3329_950x600_fit.jpg" alt="foto">
-    <section class="verhalen">
-        <h2>Regenboog </h2>
-        <P>Bus 21. Ik stap uit. Het is een gure dag, geen ultraviolette zonnestralen die het tere huidje van mijn zoontje aantasten. Hij ligt te slapen in z’n paarse kinderwagen. De reizigers lopen van en naar CS. Ik ga naar de Openbare Bibliotheek om Stijloefeningen van Raymond Queneau te lenen.</P>
-        <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
-    </section>
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
 
-    <img class="fotoverhalen" src="https://sestra.nl/wp-content/uploads/2014/02/Bang-om-verliefd-te-zijn-1200x675.jpg" alt="foto">
-    <section class="verhalen">
-        <h2>Verliefd </h2>
-        <P> Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur, onze fantastische zoon sliep net. De miezelregen aaide de haartjes op mijn hand en ik dacht aan jou. De mensen dansten en huppelden van en naar het station, en ik dacht aan jou.</P>
-        <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://sestra.nl/wp-content/uploads/2014/02/Bang-om-verliefd-te-zijn-1200x675.jpg" alt="foto">
+
+            <h2>Verliefd </h2>
+            <h3>Familie liefde en relaties </h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+
+
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
+
+        <article class="verhalen">
+            <img class="fotoverhalen" src="http://q-staff.eu/wp-content/uploads/2015/01/dromen.jpg" alt="foto">
+            <h2>Droom </h2>
+            <h3> Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
+
+
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://thumbs.werkaandemuur.nl/b9597d13a1910afd339861abcd6c3329_950x600_fit.jpg" alt="foto">
+            <h2>Regenboog </h2>
+            <h3> Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
+
+
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://sestra.nl/wp-content/uploads/2014/02/Bang-om-verliefd-te-zijn-1200x675.jpg" alt="foto">
+            <h2>Verliefd </h2>
+            <h3>Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://thumbs.werkaandemuur.nl/b9597d13a1910afd339861abcd6c3329_950x600_fit.jpg" alt="foto">
+            <h2>Regenboog </h2>
+            <h3> Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
+
+
+        <article class="verhalen">
+            <img class="fotoverhalen" src="https://sestra.nl/wp-content/uploads/2014/02/Bang-om-verliefd-te-zijn-1200x675.jpg" alt="foto">
+            <h2>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’ </h2>
+            <h3> Familie liefde en relaties</h3>
+            <p> 4.5</p>
+            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+        </article>
     </section>
