@@ -6,25 +6,38 @@
      <link rel="stylesheet" href="eurostar.css">
 </head>
 <body>
-<header> 
-  <nav>
-
-            <img class=navigatiefoto alt="foto" src=afbeeldingen/eurostarlogo.png>
 
 
-            <ul class="hoofdmenu">
-                <li> <a class="menu" href="verrassing">Verrassing</a> </li>
-                <li> <a class="menu" href="favouriet">Favouriet</a></li>
-                <li><a class="menu" href="gedownload">Gedownload</a></li>
-                <li><a class="menu" href="inloggen">Inloggen</a></li>
 
 
-            </ul>
+ <header class="header">
+        <img class="headerfoto" alt="foto" src="eurostarlogo.png">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu ">
+            <li><a href="Favouriet">Favouriet</a></li>
+            <li><a href="Downlaoden">Downlaoden</a></li>
+            <li><a href="Inloggen">Inloggen</a></li>
 
-
-        </nav>
-<h1 > login </h1>
-<form> </form>
+        </ul>
 </header>
+
+
+
+
+<h1 > login </h1>
+
+  <div class="wrapper">
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+  </div>
+
 </body>
 </html>

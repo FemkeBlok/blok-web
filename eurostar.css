@@ -4,56 +4,134 @@ body {
 
 /*navigatie */
 
-nav {
-    background: #06173d;
-
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
 }
 
-
-
-
-
-li {
-    text-decoration: none;
+a {
+    color: #000;
 }
 
-nav ul {
-    list-style-type: none;
+/* header */
+
+.headerfoto {
+    width: 10em;
+    height: 3em
+}
+
+.header {
+    background-color: #06173d;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
     padding: 0;
-    display: flex;
-    position: relative;
-    bottom: 0em;
-
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-
-
-
-li a {
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    display: block;
+    list-style: none;
+    overflow: hidden;
     background-color: #31415f;
-    padding-top: 0.625em;
-    padding-bottom: 0.625em;
-    min-width: 8.0em;
-    margin-bottom: 0em;
-    border-top: 2.0em;
+}
 
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
 
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+}
 
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
 }
 
 
-li a:hover {
-    background-color: #4f5c77;
-
-    border-top: 2.0em, solid #ffe600;
-}
 
 
 
@@ -75,6 +153,17 @@ h1 {
 
 /*filteren */
 
+.titelfilteren {
+   display: inline;
+          background-color:#31415f;
+          padding-left: 1px;
+          padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top-radius: 3em;
+
+}
+
 .filteren {
     text-decoration: none;
     background-color: #31415f;
@@ -85,7 +174,9 @@ h1 {
     padding: 1.563em;
     padding-bottom: 3.750em;
     margin-bottom: 2.188em;
-    margin-top: 1px;
+    margin-top: 2px;
+    border-top: 20em;
+
 
     margin-left: auto;
     margin-right: auto;
@@ -190,19 +281,23 @@ img {
 /*headerfoto */
 
 .container {
-    margin-top: -1em;
+
     position: relative;
+    bottom: -3em;
     border: 2em;
     border-color: blue;
     margin-bottom: 5em;
+    border-bottom: 8px solid #24b5c9;
 }
 
 .titel {
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 20px;
-    color: darkblue;
-    font-size: 1.7em
+    color: white;
+    font-size: 1.7em;
+
+    font-family: 'Major Mono Display', monospace;
 }
 
 
@@ -383,4 +478,45 @@ slider::-moz-range-thumb {
 
 .sorteren {
     background-color: ;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+
+    }
+    .header li a {
+        padding: 25px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        padding:
+    }
+    .header .menu-icon {
+        display: none;
+    }
+
+    .headerfoto {
+        width: 15em;
+        height: 3em;
+        position: fixed;
+        top: 0.2em;
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
 }

@@ -6,38 +6,34 @@
     <title>eurostar.html </title>
     <link rel="stylesheet" href="eurostar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
 </head>
 
 <body>
-    <header>
 
-        <nav>
+    <header class="header">
+        <img class="headerfoto" alt="foto" src="eurostarlogo.png">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu ">
+            <li><a href="Favouriet">Favouriet</a></li>
+            <li><a href="Downlaoden">Downloaden</a></li>
+            <li><a href="Inloggen">Inloggen</a></li>
 
-            <img class=navigatiefoto alt="foto" src=logo-desktop.svg>
+        </ul>
 
-
-            <ul>
-                <li> <a class="menu" href="verrassing">Verrassing</a> </li>
-                <li> <a class="menu" href="favouriet">Favouriet</a></li>
-                <li><a class="menu" href="inloggen">Inloggen</a></li>
-
-
-            </ul>
-
-
-        </nav>
-
-
-        <div class="container">
-            <h1 class=titel>Aanbevolen voor jou</h1><img src="afbeeldingen/banner.jpg" alt="afbeelding">
-
-            <button class="btn"> Bekijk verhalen </button>
-        </div>
 
     </header>
+    <div class="container">
+        <h1 class=titel>aanbevolen voor jou</h1><img src="Banner-Background-006.jpg" alt="afbeelding">
+        <button class="btn"> Bekijk verhalen </button>
+    </div>
+
+
+
     <section class="filteren">
 
-        <h2> Filteren </h2>
+        <h2 class="titelfilteren"> Filteren </h2>
         <form>
 
             <input class="myinput" onkeyup="myFunction()" required type="text" placeholder="Zoek een titel">
@@ -92,7 +88,7 @@
             <h2>Droom </h2>
             <h3> Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
 
@@ -102,7 +98,7 @@
             <h2>Regenboog </h2>
             <h3> Fantasy en Science fiction</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
 
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
@@ -114,7 +110,7 @@
             <h2>Verliefd </h2>
             <h3>Familie liefde en relaties </h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
 
 
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
@@ -125,7 +121,7 @@
             <h2>Droom </h2>
             <h3> Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
 
@@ -135,7 +131,7 @@
             <h2>Regenboog </h2>
             <h3> Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
 
@@ -145,7 +141,7 @@
             <h2>Verliefd </h2>
             <h3>Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
 
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
@@ -154,7 +150,7 @@
             <h2>Regenboog </h2>
             <h3> Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
 
@@ -164,10 +160,7 @@
             <h2>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’ </h2>
             <h3> Familie liefde en relaties</h3>
             <p> 4.5</p>
-            <img class="ster" alt="ster" src="afbeeldingen/star.png">
+            <img class="ster" alt="ster" src="star.png">
             <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
     </section>
-
-
-    //media (min-width:30 em) @media (min-width:30em)
