@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-     <link rel="stylesheet" href="eurostar.css">
+    <title>eurostar.html </title>
+    <link rel="stylesheet" href="eurostar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-<body>
 
+<body class="inlogpagina">
 
-
-
- <header class="header">
+    <header class="header">
         <img class="headerfoto" alt="foto" src="eurostarlogo.png">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu ">
             <li><a href="Favouriet">Favouriet</a></li>
-            <li><a href="Downlaoden">Downlaoden</a></li>
+            <li><a href="Downlaoden">Downloaden</a></li>
             <li><a href="Inloggen">Inloggen</a></li>
 
         </ul>
-</header>
+    </header>
 
 
 
 
-<h1 > login </h1>
+    <h1> Login</h1>
 
-  <div class="wrapper">
-    <form class="form-signin">
-      <h2 class="form-signin-heading">Please login</h2>
-      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-      <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-      </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    <form class="inlog">
+
+        <label>E-mail </label>
+        <input class=formulier type="text" class="form" name="email" />
+        <label> Paswoord</label>
+
+        <input class=formulierinlog type="password" class="form" name="paswoord" required="text" />
+
+        <button class="inlogknop" type="submit">Login</button>
+
     </form>
-  </div>
+
 
 </body>
 </html>

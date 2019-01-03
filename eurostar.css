@@ -27,6 +27,8 @@ a {
     position: fixed;
     width: 100%;
     z-index: 3;
+    position: fixed;
+    top: 0
 }
 
 .header ul {
@@ -151,25 +153,12 @@ h1 {
 
 
 
-/*filteren */
-
-.titelfilteren {
-   display: inline;
-          background-color:#31415f;
-          padding-left: 1px;
-          padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-top-radius: 3em;
-
-}
 
 .filteren {
     text-decoration: none;
     background-color: #31415f;
     border-radius: 0.313em;
-    max-width: 38.0em;
-    height: 30em;
+    max-width: 18.0em;
     color: white;
     padding: 1.563em;
     padding-bottom: 3.750em;
@@ -249,6 +238,7 @@ form p {
 }
 
 
+
 /*logo */
 
 .navigatiefoto {
@@ -286,7 +276,7 @@ img {
     bottom: -3em;
     border: 2em;
     border-color: blue;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
     border-bottom: 8px solid #24b5c9;
 }
 
@@ -312,6 +302,7 @@ img {
     font-size: 1em;
     border-radius: 4px;
     box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+
 }
 
 .container .btn:hover {
@@ -476,11 +467,75 @@ slider::-moz-range-thumb {
     cursor: pointer;
 }
 
-.sorteren {
-    background-color: ;
+
+
+.inlogpagina {
+    background-color: #a7e1e9;
+
+
 }
 
-/* 48em = 768px */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+
+.inlog {
+    background-color: white;
+    position: relative;
+    top: 5em;
+    max-width: 485px;
+    height: 485px;
+    border-radius: 7px;
+    margin: auto
+}
+
+.inlogknop {
+
+    max-width: 600px;
+    border-radius: 5px;
+
+    width: 15em;
+    text-align: center;
+    background-color: rgb(251, 221, 15);
+    color: #31415f;
+    border-style: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 2px, 2px #d1b829;
+    text-align: center;
+    box-shadow: rgb(210, 184, 43) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 18px 10px;
+    position: relative;
+    top: 6em;
+
+
+
+}
+
+
+
+
+
+.inlogknop:hover {
+    background-color: #ffe96a;
+}
+
+.fomulierinlog {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 
 @media (min-width: 48em) {
     .header li {
@@ -488,35 +543,24 @@ slider::-moz-range-thumb {
 
     }
     .header li a {
-        padding: 25px 30px;
+        padding: 20px 30px;
     }
     .header .menu {
         clear: none;
         float: right;
         max-height: none;
-        padding:
+
     }
     .header .menu-icon {
         display: none;
     }
 
     .headerfoto {
-        width: 15em;
+        width: 11em;
         height: 3em;
         position: fixed;
         top: 0.2em;
 
 
     }
-
-}
-
-
-
-
-
-
-
-
-
 }
