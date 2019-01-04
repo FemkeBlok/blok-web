@@ -409,9 +409,9 @@ img {
     margin-left: auto;
     margin-right: ;
     text-decoration: none;
-    position: relative;
-    left: 4.5em;
-    width: 8em;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    width: 17em;
     height: 8em;
 }
 
@@ -488,10 +488,16 @@ h1 {
     position: relative;
     top: 5em;
     max-width: 485px;
-    height: 485px;
-    border-radius: 7px;
-    margin: auto
+    height: 455px;
+    border-radius: 8px;
+    margin: auto;
+    border:20em;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
+
+
 
 .inlogknop {
 
@@ -513,9 +519,17 @@ h1 {
     line-height: 20px;
     padding: 18px 10px;
     position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+    top: 7em;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+    white-space: nowrap;
+    position: relative;
+    right: -5em;
     top: 6em;
-
-
 
 }
 
@@ -527,14 +541,38 @@ h1 {
     background-color: #ffe96a;
 }
 
-.fomulierinlog {
+
+
+.formulierinlog {
+
+    padding: 1px;
+    height: 50px;
     width: 100%;
-    padding: 12px 20px;
-    display: inline-block;
-    border: 1px solid #;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border: 1px solid #38bdce;
+    text-align: center;
+    resize: vertical;
+
+
+
 }
+
+.labelformulier  {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.inlogtekst{color: #109fb3;
+font-size: 16px;
+text-decoration: underline;
+position: absolute;
+bottom: 60px;
+left: 200px;
+font-weight: normal;}
+
+.tekstaccount{font-weight: normal;
+font-size: 15px;}
+
+
 
 
 @media (min-width: 48em) {
@@ -563,4 +601,14 @@ h1 {
 
 
     }
+    @media (min-width: 630px) {
+        .filteren {
+            width: 900em;
+        }
+
+    }
+
+
+}
+
 }
