@@ -74,6 +74,7 @@ header .menu-icon {
     float: right;
     padding: 1.73em 1.25em;
     position: relative;
+    left: 0em;
     user-select: none;
 }
 
@@ -310,7 +311,7 @@ form p {
 
 .container-2 {
     width: 500px;
-    vertical-align: iddle;
+    vertical-align: middle;
     white-space: nowrap;
     position: relative;
 
@@ -423,13 +424,13 @@ section button:hover {
 
 .sorterenfilter {
     height: 2em;
-    width: 3em;
-    background: yellow;
+    width: 10em;
+    background: #ffe96a;
 }
 
 .option {
-    width: 4em;
-    height: 5em;
+    width: 10em;
+    height: 12em;
     background: yellow
 }
 
