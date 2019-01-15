@@ -220,7 +220,7 @@ main button:hover {
     border-radius: 0.313em;
     max-width: 40em;
     color: white;
-    padding: 1.563em;
+    padding: 3em;
     padding-bottom: 3.750em;
     margin-bottom: 2.188em;
     margin-top: 0.125em;
@@ -310,7 +310,7 @@ form p {
 }
 
 .container-2 {
-    width: 500px;
+    max-width: 700px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
@@ -438,6 +438,7 @@ article form {
     position: absolute;
     top: 0em;
     right: 0em;
+    m
 }
 
 
@@ -788,8 +789,6 @@ input[type=submit]:hover {
         top: -14em;
         margin-left: auto;
         margin-right: auto;
-
-        width: 35em;
 
     }
     section button {
