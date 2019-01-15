@@ -1,5 +1,6 @@
 .titel {
     width: 30%;
+    height: 30%;
     float: right;
     z-index: 2;
 
@@ -27,7 +28,7 @@ img {
 }
 
 .titel {
-    width: 30%;
+    width: 50%;
     float: right;
     z-index: 1;
     height: 15em;
