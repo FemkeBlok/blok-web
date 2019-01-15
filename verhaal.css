@@ -1,5 +1,5 @@
 .titel {
-    width: 40%;
+    width: 30%;
     float: right;
     z-index: 2;
 
@@ -11,15 +11,15 @@ body {
 }
 
 
-.laag1 {
+img {
 
-    width: 25em;
+    width: 100%;
 
-    position: absolute;
     z-index: -5;
     display: block;
     transition: transform .2s;
-    margin: auto
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -27,7 +27,7 @@ body {
 }
 
 .titel {
-    width: ;
+    width: 30%;
     float: right;
     z-index: 1;
     height: 15em;
@@ -77,8 +77,7 @@ body {
 }
 
 .titel {
-    width: 50%;
-    height: 50%;
+
     float: right;
     z-index: 2;
 
@@ -141,8 +140,10 @@ z .rate > input:checked + label:hover,
 
 
 @media (min-width: 68.75em) {
-    laag1 {
-        width: 200em;
-        height: 500em;
+    img {
+        width: 45em;
+        height: 55em;
+        margin-left: auto;
+        margin-right: auto
     }
 }
