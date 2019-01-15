@@ -11,23 +11,25 @@
 
 <body>
 
-    <header class="header">
-        <img class="headerfoto" alt="foto" src="eurostarlogo.png">
+    <header>
+        <img alt="foto" src="eurostarlogo.png">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu ">
-            <li><a href="Favouriet">Favouriet</a></li>
-            <li><a href="Downlaoden">Downloaden</a></li>
+        <ul>
+            <li> <a href="Favouriet">Favoriet</a></li>
+            <li><a href="Downloaden">Gelezen verhalen  </a></li>
             <li><a href="inloggen.html">Inloggen</a></li>
 
         </ul>
 
 
     </header>
-    <div class="container">
-        <h1 class=titel>aanbevolen voor jou</h1><img src="Banner-Background-006.jpg" alt="afbeelding">
-        <button class="btn"> Bekijk verhalen </button>
-    </div>
+    <main class="container">
+        <h1 class=titel>eurostar verhalen</h1><img src="Schermafbeelding%202019-01-14%20om%2018.10.48.png" alt="afbeelding">
+        <p> aanbevolen voor jou</p>
+        <button class="btn"> Bekijk verhaal </button>
+
+    </main>
 
 
 
@@ -35,23 +37,30 @@
 
         <h2 class="titelfilteren"> Filteren </h2>
         <form>
-
-            <input class="myinput" onkeyup="myFunction()" required type="text" placeholder="Zoek een titel">
-
-
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="box">
+                <div class="container-2">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>
 
         </form>
 
         <form class="formulier" action="checkbox">
             <p>Genre </p>
-            <input class="checkbox" type="checkbox" name="genre" value="Familie, Liefde en Relaties" /> Familie, Liefde en Relaties
-            <input class="checkbox" type="checkbox" name="genre" value="Fantasy en Science fiction" /> Fantasy en Science fiction
-            <input class="checkbox" type="checkbox" name="genre" value="Humor en Satire" /> Humor en Satire
-            <input class="checkbox" type="checkbox" name="genre" value="Thrillers en Spanning" /> Thrillers en Spanning
-
-
-
-
+            <div class="familie">
+                <input type="checkbox" class="familie" />
+                <label>Roman</label>
+            </div>
+            <div class="familie">
+                <input type="checkbox" class="familie" /> <label>Fantasy </label>
+            </div>
+            <div class="familie">
+                <input type="checkbox" class="familie" /><label> Humor</label> </div>
+            <div class="familie">
+                <input type="checkbox" class="familie" /><label> Realistisch</label> </div>
+            <input type="checkbox" class="familie" /><label> Spanning</label>
         </form>
 
 
@@ -60,7 +69,7 @@
             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </form>
 
-        <button class="zoekknop"> Zoeken  </button>
+        <button> Zoeken  </button>
 
 
 
@@ -69,8 +78,8 @@
     <article class="sorteren">
         <h2 class="resultaten">99 resultaten </h2>
         <form class="sorterenop" action="checkbox">
-            <select name="sorterenop">
-        <option value="meest bekeken"> meest bekeken</option>
+            <select class="sorterenfilter" name="sorterenop">
+        <option class="option" value="meest bekeken"> meest bekeken</option>
         <option value="a-z"> a-z </option>
         <option value="z-a">z-a</option>
         <option value="random">random</option>
@@ -82,15 +91,17 @@
 
 
 
-    <section class="sorterenverhalen">
+    <section class="sectionsorterenverhalen">
+
         <article class="verhalen">
             <img class="fotoverhalen" src="http://q-staff.eu/wp-content/uploads/2015/01/dromen.jpg" alt="foto">
             <h2>Droom </h2>
             <h3> Familie liefde en relaties</h3>
-            <h3> 325 keer bekeken</h3>
+            <p>325 keer bekeken</p>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+            <a href="verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
+
         </article>
 
 
@@ -102,7 +113,8 @@
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
 
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+            <a href="verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
+
         </article>
 
 
@@ -114,9 +126,8 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
+            <a href="verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
 
-
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
         </article>
 
         <article class="verhalen">
@@ -126,7 +137,8 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+            <a href="%2520verhaal/verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
+
         </article>
 
 
@@ -137,7 +149,7 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+            <a href="%2520verhaal/verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
         </article>
 
 
@@ -148,8 +160,9 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
+            <a href="%2520verhaal/verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
 
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+
         </article>
         <article class="verhalen">
             <img class="fotoverhalen" src="https://thumbs.werkaandemuur.nl/b9597d13a1910afd339861abcd6c3329_950x600_fit.jpg" alt="foto">
@@ -158,8 +171,7 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
-        </article>
+            <a href="%2520verhaal/verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a> <img class="hart" src=""> </article>
 
 
         <article class="verhalen">
@@ -169,6 +181,6 @@
             <h3> 325 keer bekeken</h3>
             <p> 4.5</p>
             <img class="ster" alt="ster" src="star.png">
-            <input class="bekijkverhaalknop" type="submit" value="Bekijk Verhaal" />
+            <a href="verhaal/verhaal.html" class="bekijkverhaalknop">Bekijk verhaal</a>
         </article>
     </section>

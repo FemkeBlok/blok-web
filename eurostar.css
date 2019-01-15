@@ -10,18 +10,19 @@ body {
     background-color: #f4f4f4;
 }
 
-a {
-    color: #000;
-}
+
 
 /* header */
 
-.headerfoto {
+header img {
     width: 10em;
-    height: 3em
+    height: 3em;
+    position: fixed;
+    top: 0.3em;
+    left: 0.2em;
 }
 
-.header {
+header {
     background-color: #06173d;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -31,7 +32,7 @@ a {
     top: 0
 }
 
-.header ul {
+header ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -39,56 +40,54 @@ a {
     background-color: #31415f;
 }
 
-.header li a {
+header li a {
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    padding: 1.25em;
+    border-right: 0.19em solid #31415f;
     text-decoration: none;
+    color: white
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-    background-color: #f4f4f4;
+header li a:hover,
+header .menu-btn:hover {
+    background-color: #4f5c76;
+    border-color: inherit;
+    border-top: 0.31em solid #4f5c76;
 }
 
-.header .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-}
+
 
 /* menu */
 
-.header .menu {
+header ul {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    background-color: #31415f;
 }
 
 /* menu icon */
 
-.header .menu-icon {
+header .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 1.73em 1.25em;
     position: relative;
     user-select: none;
 }
 
-.header .menu-icon .navicon {
+header .menu-icon .navicon {
     background: #333;
     display: block;
-    height: 4px;
+    height: 0.25em;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px;
+    width: 1.75em;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
     background: #333;
     content: '';
     display: block;
@@ -98,41 +97,105 @@ a {
     width: 100%;
 }
 
-.header .menu-icon .navicon:before {
-    top: 5px;
+header .menu-icon .navicon:before {
+    top: 0.312em;
 }
 
-.header .menu-icon .navicon:after {
-    top: -5px;
+header .menu-icon .navicon:after {
+    top: -0.312em;
 }
 
-/* menu btn */
+/* menu button */
 
-.header .menu-btn {
+header .menu-btn {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+header .menu-btn:checked ~ ul {
+    max-height: 15em;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
 
+/*main*/
+
+main {
+
+    position: relative;
+    bottom: -3em;
+    border: 2em;
+    margin-bottom: 4em;
+    border-bottom: 0.5em solid #24b5c9;
+    height: 20
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: Aspect Regular;
+    text-align: left;
+    top: 1.5em;
+}
+
+main p {
+    position: absolute;
+    bottom: 9em;
+    left: 0.7em;
+    text-align: left;
+    font-family: 'Major Mono Display', monospace;
+
+}
+
+main h1 {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    text-align: left;
+    color: white;
+    font-size: 1.7em;
+
+    font-family: 'Major Mono Display', monospace;
+}
+
+img {
+
+    width: 100%;
+    height: 15.625em;
+
+
+}
+
+main button {
+    position: absolute;
+    top: 12.5em;
+    left: 1.25em;
+    padding: 0.56em 1.5em;
+    background-color: #fbde12;
+    color: #31415f;
+    font-size: 1em;
+    border-radius: 0.25em;
+    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+
+}
+
+main button:hover {
+    background-color: #ffe600;
+}
 
 
 
@@ -145,301 +208,34 @@ a {
 
 
 
-h1 {
-    font-weight: 400;
-    font-size: 3rem;
-    font-family: Aspect Regular;
-}
 
 
 
+/*filteren*/
 
 .filteren {
     text-decoration: none;
     background-color: #31415f;
     border-radius: 0.313em;
-    max-width: 18.0em;
+    max-width: 40em;
     color: white;
     padding: 1.563em;
     padding-bottom: 3.750em;
     margin-bottom: 2.188em;
-    margin-top: 2px;
+    margin-top: 0.125em;
     border-top: 20em;
+    height: 30em;
+
 
 
     margin-left: auto;
     margin-right: auto;
 
-}
-
-
-
-.myinput {
-
-    max-width: 37.500;
-    font-size: 1.0em;
-    border: none;
-    padding-bottom: 1.0em;
-    padding-top: 1.0em;
-
-    border-radius: 0.313em;
-    line-height: 1.500em;
-    margin-bottom: 0.938em;
-    width: 100%;
-    text-align-last: left;
-    box-shadow: rgb(210, 184, 43) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
-}
-
-.myinput:valid {
-    border-color: green;
-}
-
-.myinput:disabled {
-    border-color: darkred;
-}
-
-.checkbox {
-    text-align: left;
-
-}
-
-form p {
-    font-size: 1.4em;
-}
-
-.inloggen {
-    width: 40px;
-    height: 40px;
-}
-
-.zoekknop {
-
-    max-width: 600px;
-    border-radius: 5px;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(251, 221, 15);
-    color: #31415f;
-    border-style: none;
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    box-shadow: 2px, 2px #d1b829;
-    text-align: center;
-    margin-top: 3.125em;
-    box-shadow: rgb(210, 184, 43) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
-    text-transform: uppercase;
-    line-height: 20px;
-    padding: 18px 10px;
-}
-
-.zoekknop:hover {
-    background-color: #ffe96a;
-}
-
-
-
-/*logo */
-
-.navigatiefoto {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 11em;
-    height: 3em;
-
-}
-
-img {
-
-    width: 100%;
-    height: 15.625em;
-
-
-}
-
-/*verhalenresultaten */
-
-.verhalen {
-    background-color: #a7e1e9;
-    padding: 25px;
-    width: 20em;
-    margin-bottom: 35px;
-    margin-top: 0px;
-}
-
-/*headerfoto */
-
-.container {
-
-    position: relative;
-    bottom: -3em;
-    border: 2em;
-    border-color: blue;
-    margin-bottom: 10em;
-    border-bottom: 8px solid #24b5c9;
-}
-
-.titel {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.7em;
-
-    font-family: 'Major Mono Display', monospace;
-}
-
-
-
-.container .btn {
-    position: absolute;
-    top: 200px;
-    left: 20px;
-    padding: 9px 24px;
-    background-color: #fbde12;
-    color: #31415f;
-    font-size: 1em;
-    border-radius: 4px;
-    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
-
-}
-
-.container .btn:hover {
-    background-color: #ffe600;
-}
-
-/*resultaten */
-
-.containerverhalen {
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.verhalen {
-
-    border-radius: 15px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    width: 17em;
-
-}
-
-.verhalen h2 {
-    font-size: 1.2em;
-    line-height: 1.2em;
-
-}
-
-.verhalen p {
-    font-size: 0.9em;
-    line-height: 1, 0em;
-
-}
-
-.verhalen h3 {
-    font-size: 0.9em;
-    line-height: 0.1em
-}
-
-
-
-
-
-
-
-
-
-
-
-/*    §resultaten knop */
-
-.bekijkverhaalknop {
-    font-family: Pembroke, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: rgb(255, 230, 0);
-    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
-    color: rgb(85, 86, 90);
-    height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 14em;
-    border-radius: 4px;
-    border-width: 0px;
-    padding: 0px;
-    text-decoration: none;
-    position: relative;
-    bottom: 1emem;
-}
-
-.bekijkverhaalknop: hover {
-    border-top: 5px solid #ffe600;
-}
-
-.sorteren {
-    position: relative;
-}
-
-.sorterenop {
-    position: absolute;
-    top: 0em;
-    right: 0em;
-}
-
-
-.sorterenverhalen {
-    display: flex;
-    text-align: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.fotoverhalen {
-    border: 0px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: ;
-    text-decoration: none;
-    border-top-right-radius: .5em;
-    border-top-left-radius: .5em;
-    width: 17em;
-    height: 8em;
-}
-
-.likebutton {
-    position: relative;
-    width: 4em;
-    height: 4em;
-    top: 70em;
-    right: 4em;
-}
-
-.ster {
-    width: 1.7em;
-    height: 1.7em;
-    position: relative;
-    left: 2.0em;
-    bottom: 2.5em;
-
-}
-
-
-.resultaten {
-    margin-left: 50px;
 }
 
 .slider {
     -webkit-appearance: none;
-    max-width: 37.500em;
+
     width: 100%;
     height: 1.563em;
     background: #d3d3d3;
@@ -463,9 +259,361 @@ img {
 slider::-moz-range-thumb {
     width: 1.563em;
     height: 1.563em;
-    background: #4CAF50;
+
     cursor: pointer;
 }
+
+
+
+
+.myinput {
+
+
+    font-size: 1.0em;
+    border: none;
+    padding-bottom: 1.0em;
+    padding-top: 1.0em;
+
+    border-radius: 0.313em;
+    line-height: 1.500em;
+    margin-bottom: 0.938em;
+    width: 100%;
+    text-align-last: left;
+
+}
+
+.myinput:valid {
+    border-color: green;
+}
+
+.myinput:disabled {
+    border-color: darkred;
+}
+
+
+
+
+form p {
+    font-size: 1.0em;
+}
+
+.inloggen {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.box {
+
+    width: 200px;
+    height: 50px;
+}
+
+.container-2 {
+    width: 500px;
+    vertical-align: iddle;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.container-2 input#search {
+    width: 50px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+    color: white;
+}
+
+.container-2 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+.container-2 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+.container-2 input#search:-ms-input-placeholder {
+    color: white;
+}
+
+.container-2 .icon {
+    position: absolute;
+    top: 100%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: white;
+}
+
+.container-2 input#search:focus,
+.container-2 input#search:active {
+    outline: none;
+    width: 70%;
+}
+
+.container-2:hover input#search {
+    width: 70%;
+}
+
+.container-2:hover .icon {
+    color: #93a2ad;
+}
+
+section button {
+
+
+    border-radius: 0.313em;
+    text-align: center;
+    background-color: rgb(251, 221, 15);
+    color: #31415f;
+    border-style: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 2px, 2px #d1b829;
+    text-align: center;
+    margin-top: 3.125em;
+    box-shadow: rgb(210, 184, 43) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    padding: 1.125em 0.625em;
+    width: 100%;
+    position: relative;
+    top: -2em;
+}
+
+section button:hover {
+    background-color: #ffe96a;
+    position: relative;
+    top: -2em;
+}
+
+
+
+
+
+
+/*sorteren*/
+
+.sorteren {
+    position: relative;
+    right: -.2em;
+    border: 2em;
+
+}
+
+.sorterenfilter {
+    height: 2em;
+    width: 3em;
+    background: yellow;
+}
+
+.option {
+    width: 4em;
+    height: 5em;
+    background: yellow
+}
+
+article form {
+    position: absolute;
+    top: 0em;
+    right: 0em;
+}
+
+
+.sectionsorterenverhalen {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    color: black
+}
+
+/*resultaten */
+
+.verhalen {
+    background-color: #a7e1e9;
+    padding: 1.56em;
+    width: 20em;
+    margin-bottom: 2.19em;
+    margin-top: 0px;
+}
+
+.containerverhalen {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.verhalen {
+
+    border-radius: 0.94em;
+    margin-top: 0px;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-decoration: none;
+    width: 17em;
+
+}
+
+article h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+
+}
+
+article p {
+    font-size: 0.9em;
+    line-height: 1, 0em;
+
+
+}
+
+article h3 {
+    font-size: 1.0em;
+    line-height: 0.4em;
+    font-weight: normal
+}
+
+
+
+.bekijkverhaalknop {
+    font-family: Pembroke, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgb(255, 230, 0);
+    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    color: rgb(85, 86, 90);
+    padding: 3em;
+
+    text-align: center;
+    text-transform: uppercase;
+    width: 11em;
+    border-radius: 0.25em;
+    border-width: 0px;
+    padding: 0px;
+    text-decoration: none;
+    position: relative;
+    bottom: -.5em;
+    left: 0.1em;
+    display: block;
+    padding: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+.bekijkverhaalknop: hover {
+    border-top: 0.3125 solid #ffe600;
+}
+
+
+
+.resultaten {
+    margin-left: 3.125;
+    color: black;
+}
+
+article img {
+    border: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: ;
+    text-decoration: none;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    width: 17em;
+    height: 8em;
+}
+
+
+
+.ster {
+    width: 1.7em;
+    height: 1.7em;
+    position: relative;
+    left: 2.0em;
+    bottom: 2.5em;
+
+}
+
+
+#switch {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switch:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switch:checked + #switch {
+    background: yellow;
+}
+
+#switch:checked + .switch:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: yellow
+}
+
+.switch:active:after {
+    width: 130px;
+}
+
+
 
 
 
@@ -479,7 +627,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     position: relative;
-    top: 70px;
+    top: 4.375;
 }
 
 
@@ -487,24 +635,30 @@ h1 {
     background-color: white;
     position: relative;
     top: 5em;
-    max-width: 485px;
-    height: 455px;
-    border-radius: 8px;
+    max-width: 30.312em;
+    height: 28.437em;
+    border-radius: 0.5em;
     margin: auto;
-    border:20em;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
+    border: 20em;
+    padding-top: 1.25em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
 }
 
 
+input[type=submit] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
 
-.inlogknop {
+input[type=submit]:focus {
+    width: 100%;
+}
 
-    max-width: 600px;
-    border-radius: 5px;
+input[type=submit] {
 
-    width: 15em;
+
+    border-radius: 0.3125em;
     text-align: center;
     background-color: rgb(251, 221, 15);
     color: #31415f;
@@ -516,8 +670,8 @@ h1 {
     text-align: center;
     box-shadow: rgb(210, 184, 43) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
     text-transform: uppercase;
-    line-height: 20px;
-    padding: 18px 10px;
+    line-height: 1.25em;
+    padding: 1.0em 0.625em;
     position: relative;
     margin-left: 2em;
     margin-right: 2em;
@@ -525,11 +679,8 @@ h1 {
     margin: 0 auto;
     display: inline-block;
     width: 100%;
-    max-width: 280px;
-    white-space: nowrap;
-    position: relative;
-    right: -5em;
-    top: 6em;
+    top: 5em;
+
 
 }
 
@@ -537,7 +688,10 @@ h1 {
 
 
 
-.inlogknop:hover {
+
+
+
+input[type=submit]:hover {
     background-color: #ffe96a;
 }
 
@@ -545,8 +699,8 @@ h1 {
 
 .formulierinlog {
 
-    padding: 1px;
-    height: 50px;
+    padding: 0.0625em;
+    height: 4.125em;
     width: 100%;
     border: 1px solid #38bdce;
     text-align: center;
@@ -556,59 +710,108 @@ h1 {
 
 }
 
-.labelformulier  {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+.formulierinlog:invalid {
+    border: 1px solid red;
 }
 
-.inlogtekst{color: #109fb3;
-font-size: 16px;
-text-decoration: underline;
-position: absolute;
-bottom: 60px;
-left: 200px;
-font-weight: normal;}
-
-.tekstaccount{font-weight: normal;
-font-size: 15px;}
+.formulierinlog:valid {
+    0.0625em solid #38bdce;
+}
 
 
 
+.labelformulier {
+    padding: 0.75em 0.75em 0.75em 0;
+    display: inline-block;
+}
 
-@media (min-width: 48em) {
-    .header li {
+.inlogtekst {
+    color: #109fb3;
+    margin: auto;
+    font-size: 1em;
+    text-decoration: underline;
+
+
+
+
+}
+
+.tekstaccount {
+    font-weight: normal;
+
+    font-size: 0.93em;
+}
+
+
+
+
+
+@media (min-width: 65em) {
+    header li {
         float: left;
+        color: white;
 
     }
-    .header li a {
-        padding: 20px 30px;
+    header li a {
+        padding: 1.25em 1.875em;
+
     }
-    .header .menu {
+    header ul {
         clear: none;
         float: right;
         max-height: none;
 
+
     }
-    .header .menu-icon {
+    header .menu-icon {
         display: none;
     }
+    header li a:hover,
+    header .menu-btn:hover {
+        background-color: #4f5c76;
+        border-top: 0.31em solid #fff300;
+        border-right: #fff300
+    }
 
-    .headerfoto {
+    header img {
+
         width: 11em;
         height: 3em;
         position: fixed;
-        top: 0.2em;
-
-
-    }
-    @media (min-width: 630px) {
-        .filteren {
-            width: 900em;
-        }
+        top: 0.4em;
+        left: 1em;
 
     }
+    .filteren {
+        position: relative;
+        top: -14em;
+        margin-left: auto;
+        margin-right: auto;
 
+        width: 35em;
 
-}
+    }
+    section button {
+        position: relative;
+        top: -2em
+    }
+    .sorteren {
+        position: relative;
+        top: -14em;
+    }
 
+    .sectionsorterenverhalen {
+        position: relative;
+        top: -13em
+    }
+
+    .container-2 input#search:focus,
+    .container-2 input#search:active {
+        outline: none;
+        width: 110%;
+    }
+
+    .container-2:hover input#search {
+        width: 110%;
+    }
 }

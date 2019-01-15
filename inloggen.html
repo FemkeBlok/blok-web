@@ -12,13 +12,13 @@
 
 <body class="inlogpagina">
 
-    <header class="header">
-        <img class="headerfoto" alt="foto" src="eurostarlogo.png">
+    <header>
+        <img alt="foto" src="eurostarlogo.png">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu ">
             <li><a href="Favouriet">Favouriet</a></li>
-            <li><a href="Downlaoden">Downloaden</a></li>
+            <li><a href="Downlaoden">Gelezen verhalen</a></li>
             <li><a href="Inloggen">Inloggen</a></li>
 
         </ul>
@@ -29,15 +29,18 @@
 
     <h1> Login</h1>
 
-    <form class="inlog">
+    <form class="inlog" action="index.html">
 
         <label class=labelformulier>E-mail </label>
-        <input class=formulierinlog type="email" class="form" name="email" />
+        <input class=formulierinlog type="email" class="form" name="email" required="text" />
         <label class=labelformulier> Paswoord</label>
 
         <input class=formulierinlog type="password" class="form" name="paswoord" required="text" />
 
-        <input class="inlogknop" src="index.html" type="submit">
+
+
+
+        <input class="inglogknop" value="verzenden" type="submit">
 
         <a class="inlogtekst">Wachtwoord vergeten? </a>
 

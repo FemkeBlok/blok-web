@@ -1,0 +1,148 @@
+.titel {
+    width: 40%;
+    float: right;
+    z-index: 2;
+
+}
+
+
+body {
+    background-color: #f1c5a5
+}
+
+
+.laag1 {
+
+    width: 25em;
+
+    position: absolute;
+    z-index: -5;
+    display: block;
+    transition: transform .2s;
+    margin: auto
+}
+
+
+
+}
+
+.titel {
+    width: ;
+    float: right;
+    z-index: 1;
+    height: 15em;
+    position: relative
+}
+
+.titel {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.laag1 {
+
+
+
+    -webkit-animation: rotation 60s infinite linear;
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(359deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.titel {
+    width: 50%;
+    height: 50%;
+    float: right;
+    z-index: 2;
+
+
+}
+
+.titel {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.titel:hover {
+    opacity: 0.5;
+}
+
+.rate {
+    float: left;
+    position: absolute;
+
+}
+
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1.0em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffd74a;
+}
+
+z .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #ffd74a;
+}
+
+
+
+@media (min-width: 68.75em) {
+    laag1 {
+        width: 200em;
+        height: 500em;
+    }
+}
