@@ -309,7 +309,7 @@ form p {
     height: 50px;
 }
 
-.container-2 {
+.zoekbalk {
     width: 100%;
     vertical-align: middle;
     white-space: nowrap;
@@ -317,7 +317,7 @@ form p {
 
 }
 
-.container-2 input#search {
+.zoekbalk input#search {
     width: 50px;
     height: 50px;
     background: #2b303b;
@@ -338,45 +338,54 @@ form p {
     transition: width .55s ease;
 }
 
-.container-2 input#search::-webkit-input-placeholder {
+.zoekbalk input#search::-webkit-input-placeholder {
     color: white;
 }
 
-.container-2 input#search:-moz-placeholder {
-    /* Firefox 18- */
+.zoekbalk input#search:-moz-placeholder {
+
     color: white;
 }
 
-.container-2 input#search::-moz-placeholder {
-    /* Firefox 19+ */
+.zoekbalk input#search::-moz-placeholder {
+
     color: white;
 }
 
-.container-2 input#search:-ms-input-placeholder {
+.zoekbalk input#search:-ms-input-placeholder {
     color: white;
 }
 
-.container-2 .icon {
+.zoekbalk .icon {
     position: absolute;
-    top: 100%;
+    top: 30%;
     margin-left: 17px;
     margin-top: 17px;
     z-index: 1;
     color: white;
 }
 
-.container-2 input#search:focus,
-.container-2 input#search:active {
+.icon {
+    position: relative;
+    z-index: 2;
+    width: 2em;
+    height: 2em;
+    top: 2.7em;
+    right: -0.6em
+}
+
+.zoekbalk input#search:focus,
+.zoekbalk input#search:active {
     outline: none;
-    width: 70%;
+    width: 100%;
 }
 
-.container-2:hover input#search {
-    width: 70%;
+.zoekbalk:hover input#search {
+    width: 100%;
 }
 
-.container-2:hover .icon {
-    color: #93a2ad;
+.zoekbalk:hover .icon {
+    width: 100% #93a2ad;
 }
 
 section button {
@@ -438,7 +447,7 @@ article form {
     position: absolute;
     top: 0em;
     right: 0em;
-    m
+
 }
 
 
@@ -510,7 +519,7 @@ article h3 {
     background-color: rgb(255, 230, 0);
     box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
     color: rgb(85, 86, 90);
-    padding: 3em;
+    padding: 4em;
 
     text-align: center;
     text-transform: uppercase;
@@ -520,7 +529,7 @@ article h3 {
     padding: 0px;
     text-decoration: none;
     position: relative;
-    bottom: -.5em;
+
     left: 0.1em;
     display: block;
     padding: 0.5em;
@@ -534,7 +543,7 @@ article h3 {
 
 
 
-}
+
 
 
 .bekijkverhaalknop: hover {
@@ -552,7 +561,7 @@ article img {
     border: 0px;
     margin-top: auto;
     margin-left: auto;
-    margin-right: ;
+
     text-decoration: none;
     border-top-right-radius: .5em;
     border-top-left-radius: .5em;
@@ -571,51 +580,72 @@ article img {
 
 }
 
-
-#switch {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-.switch {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 40px;
-    height: 20px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
+.likebutton {
+    width: 2em;
+    height: 2em;
     position: relative;
+    bottom: 1.7em;
+    left: 15em
 }
 
-.switch:after {
-    content: '';
+.gelezen {
+    position: relative;
+    top: 7em;
+    border-radius: 0.94em;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 1em;
+    text-decoration: none;
+    width: 17em;
+    background-color: #a7e1e9
+}
+
+}
+
+.rate {
+    float: left;
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
+    top: 0em;
+
 }
 
-.switch:checked + #switch {
-    background: yellow;
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
 }
 
-#switch:checked + .switch:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-    background: yellow
+.rate:not(:checked) > label {
+    float: right;
+    width: 1.0em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
 
-.switch:active:after {
-    width: 130px;
+.rate:not(:checked) > label:before {
+    content: '★ ';
 }
 
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
 
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffd74a;
+}
+
+z .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #ffd74a;
+}
 
 
 
@@ -717,7 +747,7 @@ input[type=submit]:hover {
 }
 
 .formulierinlog:valid {
-    0.0625em solid #38bdce;
+    border: 0.0625em solid #38bdce;
 }
 
 
