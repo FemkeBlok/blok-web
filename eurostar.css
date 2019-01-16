@@ -312,17 +312,17 @@ form p {
 }
 
 .zoekbalk input#search {
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3.125em;
     background: #2b303b;
     border: none;
     font-size: 10pt;
     float: left;
     color: #262626;
-    padding-left: 35px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    padding-left: 2.188em;
+    -webkit-border-radius: 0.313em;
+    -moz-border-radius: 0.313em;
+    border-radius: 0.313em;
     color: #fff;
 
     -webkit-transition: width .55s ease;
@@ -422,6 +422,8 @@ section button:hover {
     position: relative;
     right: -.2em;
     border: 2em;
+    margin: 1em;
+
 
 }
 
@@ -429,6 +431,9 @@ section button:hover {
     height: 2em;
     width: 10em;
     background: #ffe96a;
+    margin: 1em;
+    position: relative;
+    top:-0.7em;
 }
 
 .option {
