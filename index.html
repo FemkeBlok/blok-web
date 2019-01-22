@@ -13,18 +13,19 @@
 <body>
 
     <header>
-        <img alt="foto" src="eurostarlogo.png">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul>
-            <li> <a href="Favouriet">Favoriet</a></li>
-            <li><a href="gelezen.html">Gelezen verhalen</a></li>
-            <li><a href="inloggen.html">Inloggen</a></li>
-
-        </ul>
-
-
+        <img src="eurostarlogo.png" alt="" class="logo">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="inloggen.html" class="nav-link">Inloggen</a></li>
+                <li class="nav-item"><a href="gelezen.html" class="nav-link">Gelezen</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Favoriet</a></li>
+            </ul>
+            <img src="url(" https://www.iconfinder.com/data/icons/tupix-1/30/list-512.png ") no-repeat center"class="nav-burger" alt="hamburger">
+        </nav>
     </header>
+
+
+
     <main class="container">
         <h1 class=titel>eurostar verhalen</h1><img src="Schermafbeelding%202019-01-14%20om%2018.10.48.png" alt="afbeelding">
         <p> aanbevolen voor jou</p>
@@ -43,18 +44,21 @@
             <p>Genre </p>
             <div class="checkboxes">
 
-                <input type="checkbox" class="familie" />
-                <label>Roman</label>
+                <div class="familie"> <input type="checkbox" />
+                    <label>Roman</label></div>
 
+                <div class="familie">
+                    <input type="checkbox" /> <label>Fantasy </label></div>
 
-                <input type="checkbox" class="familie" /> <label>Fantasy </label>
+                <div class="familie">
 
-
-                <input type="checkbox" class="familie" /><label> Humor</label>
-
-                <input type="checkbox" class="familie" /><label> Realistisch</label>
-
-                <input type="checkbox" /><label> Spanning</label>
+                    <input type="checkbox" /><label> Realistisch</label></div>
+                <div class="familie">
+                    <input type="checkbox" /><label> Humor  </label>
+                </div>
+                <div class="familie">
+                    <input type="checkbox" /><label>  Spanning</label>
+                </div>
 
             </div>
         </form>
